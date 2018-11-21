@@ -1,0 +1,15 @@
+{
+  "name": "staff-portal",
+  "version": "1.0.0",
+  "description": "Staff Portal for employees to see their employment stats",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Nolan Hubbard-Richards",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "electron": "^3.0.9"
+  }
+}

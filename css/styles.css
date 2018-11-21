@@ -1,0 +1,50 @@
+body {
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+#primary-brand {
+    color: #039BE6;
+    text-shadow: 3px 3px #212529;
+}
+.navbar-brand {
+    color: #40da55;
+    text-shadow: 3px 3px #212529;
+}
+
+.card-section {
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #212529;
+    color: whitesmoke;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 5px #c8e0cb, 0 0 10px #c8e0cb, 0 0 15px #c8e0cb,
+    0 0 20px #40da55, 0 0 35px #40da55, 0 0 40px #40da55, 0 0 50px #40da55, 0 0 75px #40da55;
+}
+
+.bufferRow {
+    margin: 50px;
+
+}
+
+.description-section {
+    margin-top: 25px;
+    color: whitesmoke;
+}
+
+.login-label {
+    color: #039BE6;
+}
+
+.btn-login {
+    font-weight: 600;
+    width: 50%;
+    color: #212529;
+    background-color: #40da55;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+}
