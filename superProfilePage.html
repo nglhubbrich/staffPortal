@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
     <title>Super Profile</title>
-</head>
-<body>
-    <h1>buttlicker</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="row">
+        <div class="col-9">
+          <h1 class="name-heading text-align-center" id="name"></h1>
+        </div>
+        <div class="col">
+          <div class="row justify-content-center" id="position-heading">
+            <p id="positionLabel">position: <span id="positionValue"></span></p>
+          </div>
+          <div class="row justify-content-center">
+            <button
+              type="button"
+              class="btn btn-sm btn-block btn-logout"
+              id="logoutBtn"
+            >
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="row bufferRow"></div>
+    <div class="container control-center">
+      <div class="row justify-content-center">
+        <h1 class="control-center-heading">Control Center</h1>
+      </div>
+      <div class="container card-section">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Manage Staff</h5>
+              <p class="card-text">
+                Some people stay, others go on to other things. Keep your Staff
+                list up to date.
+              </p>
+              <button type="button" class="btn btn-light btn-sm btn-add-staff">
+                Add Staff
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark btn-sm btn-remove-staff"
+              >
+                Remove Staff
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Order Reviews</h5>
+              <p class="card-text">
+                Review some orders to see how well your staff are counting.
+                Check their accuracy on the counts as well as their efficiency,
+                such as time to complete orders, time away from the chute during
+                orders, etc.
+              </p>
+              <button
+                type="button"
+                class="btn btn-dark btn-sm btn-review-order"
+              >
+                Choose a staff member to review
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Performance Reviews</h5>
+              <p class="card-text">
+                Much like with the accuracy and efficiency for counting, check
+                up on your staff to see how they are doing overall. Identify
+                where they are lacking and where they are excelling with the
+                Guided Performace Review.
+              </p>
+              <button
+                type="button"
+                class="btn btn-dark btn-sm btn-performance-review"
+              >
+                Go to the Guided Performance Review
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./superProfilePage.js"></script>
+  </body>
 </html>

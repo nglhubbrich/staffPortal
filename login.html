@@ -1,84 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Staff Portal: Login</title>
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/login.css" />
 
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- Main Header Section -->
     <!-- TODO add a navigation menu -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <span class="navbar-brand"> <span class="mb-4 h3" id="primary-brand">Sarcan</span> staff portal</span>
-        </div>
+      <div class="container">
+        <span class="navbar-brand">
+          <span class="mb-4 h3" id="primary-brand">Sarcan</span> staff
+          portal</span
+        >
+      </div>
     </nav>
 
     <!-- Application Details Section -->
     <!-- information provided on each of the sections available -->
     <div class="container card-section">
-        <div class="card-deck">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Training</h5>
-                        <p class="card-text">
-                            Check out the status on all your Training. What you need to complete and when it needs to be completed. Also check on what you have already completed and what your score was!
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Stay up to date</h5>
-                        <p class="card-text">
-                            Get the latest news from the Mother Ship with all the most recent Memos and Sarcan News Releases.
-                        </p>
-                        <span class="badge badge-info">Coming Soon!</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Stats Dashboard</h5>
-                        <p class="card-text">
-                            Get a closer look at how you are doing with all your employment stats. Length of Service, Counting Accuracy, past Performance Reviews, and more!
-                        </p>
-                    </div>
-                </div>
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Training</h5>
+            <p class="card-text">
+              Check out the status on all your Training. What you need to
+              complete and when it needs to be completed. Also check on what you
+              have already completed and what your score was!
+            </p>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Stay up to date</h5>
+            <p class="card-text">
+              Get the latest news from the Mother Ship with all the most recent
+              Memos and Sarcan News Releases.
+            </p>
+            <span class="badge badge-info">Coming Soon!</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <h5 class="card-title">Stats Dashboard</h5>
+            <p class="card-text">
+              Get a closer look at how you are doing with all your employment
+              stats. Length of Service, Counting Accuracy, past Performance
+              Reviews, and more!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row bufferRow">
-
-    </div>
-    <!-- Account Section - Info Sidebar & Login  -->
+    <div class="row bufferRow"></div>
+    <!-- Account Section - Info Sidebar & Login -->
     <!-- Describes how to get an account if you don't already have one -->
     <!-- A login button to, well, log in! -->
     <div class="container description-section">
-        <div class="row mt-sm-4 mt-md-0 align-items-center">
-            <div class="col-sm-12 col-md-8">
-                <h3>Employee Accounts</h3>
-                <p class="lead">Don't have an account yet? No worries!</p>
-                <p>If you don't have an account yet or your account doesn't seem to be working, a supervisor will be able to help! All we need to set up your account is your Name, an Email and a phone number and we will take care of the rest!</p>
-                <p>If you are a new employee, it is important to note that you might not have anything in your dashboard for sometime in the beginning of your employment. Head Office needs to set up your training profile for you so that will not be available until they do. As well as Counting stats and other employment metrics will come as time goes on.</p>
-            </div>
-            <div class="col-sm-12 col-md-4 align-items-center login-form-">
-                <h3 class="login-label">Login</h3>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="usernameField" placeholder="Enter your username">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="passwordField" placeholder="Enter your password">
-                </div>    
-                <div class="form-group">
-                    <button type="button" class="btn btn-sm btn-block btn-login" id="loginBtn">Enter!</button>
-                </div>    
-            </div>
+      <div class="row mt-sm-4 mt-md-0 align-items-center">
+        <div class="col-sm-12 col-md-8">
+          <h3>Employee Accounts</h3>
+          <p class="lead">Don't have an account yet? No worries!</p>
+          <p>
+            If you don't have an account yet or your account doesn't seem to be
+            working, a supervisor will be able to help! All we need to set up
+            your account is your Name, an Email and a phone number and we will
+            take care of the rest!
+          </p>
+          <p>
+            If you are a new employee, it is important to note that you might
+            not have anything in your dashboard for sometime in the beginning of
+            your employment. Head Office needs to set up your training profile
+            for you so that will not be available until they do. As well as
+            Counting stats and other employment metrics will come as time goes
+            on.
+          </p>
         </div>
+        <div class="col-sm-12 col-md-4 align-items-center login-form-">
+          <h3 class="login-label">Login</h3>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="usernameField"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="passwordField"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="form-group">
+            <button
+              type="button"
+              class="btn btn-sm btn-block btn-login"
+              id="loginBtn"
+            >
+              Enter!
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./renderer.js"></script>
-</body>
+    <script src="./login.js"></script>
+  </body>
 </html>
